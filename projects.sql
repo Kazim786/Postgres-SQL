@@ -251,3 +251,4 @@
 
 --2 What are all technologies used by the Personal Website?
 
+SELECT tech_id FROM project_uses_tech WHERE project_id = 4;
