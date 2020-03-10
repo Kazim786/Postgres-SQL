@@ -251,4 +251,8 @@
 
 --2 What are all technologies used by the Personal Website?
 
-SELECT tech_id FROM project_uses_tech WHERE project_id = 4;
+-- SELECT tech_id FROM project_uses_tech WHERE project_id = 4;
+
+--3. Perform a left outer join from the tech table to the project_uses_tech table 
+-- which techs has no associated project?
+SELECT * FROM tech LEFT OUTER JOIN project_uses_tech ON project_uses_tech.project_id = id;
