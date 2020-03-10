@@ -255,4 +255,9 @@
 
 --3. Perform a left outer join from the tech table to the project_uses_tech table 
 -- which techs has no associated project?
-SELECT * FROM tech LEFT OUTER JOIN project_uses_tech ON project_uses_tech.project_id = id;
+-- SELECT * FROM tech LEFT OUTER JOIN project_uses_tech ON project_uses_tech.project_id = id;
+
+--4. Based on the previous query, get the count of the number of techs used by each project.
+-- SELECT project_id, count(tech_id) 
+-- FROM project_uses_tech
+-- GROUP BY project_id;
